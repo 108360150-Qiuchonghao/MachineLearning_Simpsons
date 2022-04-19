@@ -18,11 +18,11 @@
 "model.h5"是訓練後的權重
 
 "theSimpsons-test"中儲存了test的圖片
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/4.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/4.png)
 
 "theSimpsons-train"中儲存了train的圖片
 訓練集中每個角色有1000-2000張圖片，一共有50個角色。
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/5.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/5.png)
 
 "keras_sub.csv"要submission的結果
 
@@ -31,7 +31,7 @@
 3.程式：
 
 我使用 jupyter notebook 編譯程式
-![image](https://github.com/MachineLearningNTUT/regression-T108360150/blob/main/IMG/jupyter1.jpg)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Houseprice/blob/main/IMG/jupyter1.jpg)
 
 
 # Data Preprocessing：
@@ -150,7 +150,7 @@ In [4]:
 
         # 取得訓練資料集與驗證資料集  
          X_train, X_test, y_train, y_test = get_dataset(save=True, load=False)
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/2.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/2.png)
 
 
 現在我們來定義我們的模型架構。我們將使用具有6個卷積層的前饋網絡，然後是完全連接的隱藏層。
@@ -182,7 +182,7 @@ In [5]:
             model.add(Dense(num_classes, activation='softmax'))
             
             return model;
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/3.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/3.png)
 
 
 在訓練模型之前，我們需要將模型配置為學習算法並進行編譯。我們需要指定:
@@ -239,7 +239,7 @@ In [8]:
         plt.show()
 
 Epochs200-250的訓練結果如圖所示：
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/1.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/1.png)
 
 # Test：
 In [9]:   
@@ -280,4 +280,4 @@ In [9]:
 
 這次比賽train模型的時間非常的長，因為我使用cpu作為工具，跑250個Epoch後模型接近overfitting，用時將近3小時，若改用GPU進行運算，時間會大幅度提升。
 
-![image](https://github.com/MachineLearningNTUT/classification-T108360150/blob/master/IMG/6.png)
+![image](https://github.com/108360150-Qiuchonghao/MachineLearning_Simpsons/blob/main/IMG/6.png)
